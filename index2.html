@@ -1,0 +1,119 @@
+<!--THIS IS A BUNCH OF SET UP SHIT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<!--END OF SET UP SHIT-->
+
+
+
+
+<!--THIS IS FOR THE TABS AT THE TOP-->
+<div class="tab">
+    <button class="tablinks" onclick="clickHandle(event, 'Cat')">GROUP CHAT</button>
+    <button class="tablinks" onclick="clickHandle(event, 'Bear')">IMPORTANT NOTICES</button>
+</div>
+<br>
+<div id="Cat" class="tabcontent">
+
+</div>
+
+<div id="Bear" class="tabcontent" style="color:red;" align=center>
+    <H1>NOTHING IS EVER GOING TO BE HERE</H1>
+</div>
+<!--THIS IS THE END FOR THE TABS AT THE TOP-->
+
+
+
+
+<!--THIS IS CSS FOR THE TABS-->
+<script>
+    function clickHandle(evt, animalName) {
+      let i, tabcontent, tablinks;
+    
+      // This is to clear the previous clicked content.
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+    
+      // Set the tab to be "active".
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    
+      // Display the clicked tab and set it to active.
+      document.getElementById(animalName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+    <br>
+    <style>
+        /* Style the tab */
+        .tab {
+        overflow: hidden;
+        border: 1px solid red;
+        background-color: red;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: red;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+        background-color:red;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid red;
+        border-top: none;
+        }
+    </style>
+<!--END OF CSS FOR TABS-->
+
+
+
+
+<!--ACTUAL WEBSITE-->
+<body style="background-color:black;">
+    <H1 style="color:red" align=center>
+        PHOENIX ENTERTAINMENT
+    </H1>
+    <h2 style="color:red" align=center>
+        Empolyee Version
+    </h2>
+    <br>
+    <p style="color:red;" align=center>
+        
+
+THIS IS BORING
+
+
+    </p>
+ <br>
+ <p style="color:red" align=center>
+ANY PROBLEMS CONTACT AN OWNER OF THE COMPANY
+ </p>
+</body>
+</html>
