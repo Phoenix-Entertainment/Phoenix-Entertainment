@@ -1,30 +1,45 @@
+<!------------------------------------------THIS IS THE SETUP PART---------------------------------------------->
+<script type="text/javascript">
+    //because i had too
+    console.log("IF YOU LOOK HERE AND SEE THIS YOUR A GREAT GUY ;)");
+</script>
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>
+    <script defer src="Login.js"></script>
+    <link rel="stylesheet" type="text/css" href="Login.css">
+</head>    
+<body> 
+    <div id="error"></div>
+<!------------------------------------------THIS IS THE SETUP PART---------------------------------------------->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Login(CSS).css">
-    <title>Login Page</title>
-</head>
-<body style="background-color:whitesmoke;">
-    <form action="Empolyee-Mode.html" method="post">
-        <div class="imgcontainer">
-          <img src="Avatar.png" alt="Avatar" class="avatar">
-        </div>
-      
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-      </form>
-</body>
-</html>
+
+
+
+<!------------------------------------------THIIS THE LOGIN PART---------------------------------------------->
+
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form id="login" method="get" action="Empolyee-Mode.html">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="uname" id="uname" placeholder="Username", required>    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="pass" id="pass" placeholder="Password", required>    
+        <br><br>    
+        <button onClick="validation();" id="log">Login Here</button>       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>        
+    </form>     
+</div>
+<!------------------------------------------THIIS THE LOGIN PART---------------------------------------------->
+
+</body>    
+</html>     
