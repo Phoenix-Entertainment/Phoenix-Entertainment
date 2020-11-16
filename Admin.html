@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Admin Room</title>
+    </head>
+    <body>
+        <div class="correct">
+            <p>You got the code correct /n/n/n/n</p>
+        </div>
+        <div class="incorrect">
+            <P>That's foul \n\n\n\n</P>
+        </div>
+        <script>
+            // Getting the URL parameter
+            var url = new URL(window.location.href);
+            var code = url.searchParams.get("admin-code");
+            console.log(code);
+
+            // Showing/hiding the divs
+            correctDiv = document.getElementsByClassName("correct");
+            incorrectDiv = document.getElementsByClassName("incorrect");
+            adminCode = "WBX32AK1287";
+            if (code == adminCode) {
+                correctDiv[0].style.display = "block";
+                incorrectDiv[0].style.display = "none";
+                console.log("Correct :)))")
+            }
+            else {
+                correctDiv[0].style.display = "none";
+                incorrectDiv[0].style.display = "block";
+                console.log("You sukc")
+            }
+        </script>
+    </body>
+</html>
