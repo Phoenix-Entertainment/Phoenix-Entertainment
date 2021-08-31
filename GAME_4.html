@@ -4,6 +4,30 @@
 </script>
 <!DOCTYPE html>
 <html lang='en'>
+    <style type="text/css">
+        #topright {
+            position: absolute;
+            right: 0;
+            top: -10;
+            display: block;
+            height: 125px;
+            width: 125px;
+            background: url(TRbanner.gif) no-repeat;
+            text-indent: -999em;
+            text-decoration: none;
+        }
+        #topleft {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: block;
+                height: 125px;
+                width: 125px;
+                background: url(TRbanner.gif) no-repeat;
+                text-indent: -999em;
+                text-decoration: none;
+            }
+        </style>
  
 <head>
     <title>Textris</title>
@@ -20,7 +44,8 @@
     </style>
 </head>
  
-<body>
+<body style="background-color:black;">
+    <img id="topright" src="Company Logo.PNG" title="company logo">Top Right Link Text</img>
     <canvas></canvas>
     <script>
         'use strict';
